@@ -1,0 +1,289 @@
+@import url(reset.css);
+
+/* Containers */
+.container-1 {
+    padding: 10px 10px 10px 10px;
+    height: 100vh;
+    color: #99534D;
+}
+
+.container-2 {
+    padding: 10px 10px 10px 10px;
+    height: 100vh;
+    color: #99534D;
+}
+
+.content-container {
+    background-color: #f7f0e6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'open Sans', sans serif;
+    padding: 2rem 0;
+}
+
+/* First container */
+
+.initials {
+    height: 30vh;
+}
+
+.flower-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.title {
+    font-family: 'Whisper', cursive;
+    color: #78443f;
+    font-size: 4.3rem;
+}
+
+.sub-title {
+    font-family: 'Whisper', cursive;
+    color: #99534D;
+    font-size: 2.8rem;
+} 
+
+.intro-section {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.info-section {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Second container */
+
+.flower-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 40%;
+}
+
+.img-path {
+    width: 100%;
+}
+
+.path-container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.church-container {
+    width: 67%;
+    height: 31%;
+    position: absolute;
+    top: 0;
+    right: 2%; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.party-container {
+    width: 67%;
+    height: 30%;
+    position: absolute;
+    bottom: 1%;
+    left: 2%; 
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.address img {
+    width: 18px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Other utils */
+
+a{
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mb-05 {
+    margin-bottom: 0.5rem;
+}
+
+.mt-05 {
+    margin-top: 0.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.relative {
+    position: relative;
+}
+
+/* fonts */
+
+.txt-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+
+.txt-content-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.txt-content-small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+.txt-whisper {
+    font-family: 'Whisper', cursive;
+    font-size: 1.7rem;
+}
+.txt-whisper-small {
+    font-family: 'Whisper', cursive;
+    font-size: 1.1rem;
+}
+.txt-qwitcher-small {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 1.5rem;
+}
+.txt-qwitcher {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 2rem;
+}
+
+.dark {
+    color: black;
+}
+
+/* button */
+.btn {
+    background-color: transparent;
+    border: 1px solid #99534D;
+    color: #99534D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem !important;
+    padding: 5px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* mobile properties */
+
+@media only screen and (max-width: 1000px) {
+    .container-2 {
+        height: 100vh;
+    }
+    
+    .church-content {
+        text-align: center;
+        position: relative;
+        right: 0;
+    }
+
+    .path {
+        height: 60vh;
+    }
+
+    .party-content {
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+
+    .place-img {
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .initials {
+        height: 25vh;
+    }
+    .title {
+        font-size: 2.95rem;
+    }
+    .sub-title {
+        font-size: 2.3rem;
+    }
+    .info-section {
+        font-size: 1rem;
+    }
+
+    .place-img {
+        height: 20vh;
+    }
+
+    .church {
+        justify-content: center;
+    }
+
+    .church-content {
+        font-size: 0.8rem;
+        right: 0;
+    }
+
+    .party {
+        justify-content: center;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .party-content {
+        font-size: 0.8rem;
+        left: 0;
+    }
+
+    /* .form {
+        font-size: 1.1rem;
+    }
+    .form button {
+        font-size: 1.1rem;
+    } */
+
+} 
